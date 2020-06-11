@@ -1,16 +1,9 @@
 package com.example.demo.lua;
 
-import javax.annotation.PostConstruct;
-
-import org.springframework.beans.BeansException;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.ApplicationContextAware;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.data.redis.core.script.DefaultRedisScript;
 import org.springframework.scripting.support.ResourceScriptSource;
-
 import redis.clients.jedis.Jedis;
-import redis.clients.jedis.JedisPool;
 
 public class LuaDemo {
 	private static DefaultRedisScript<Long> getRedisScript;
